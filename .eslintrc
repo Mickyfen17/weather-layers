@@ -13,6 +13,7 @@
     "spaced-comment": 0,
     "react/react-in-jsx-scope": 0,
     "arrow-parens": ["error", "as-needed"],
+    "no-return-assign": 0,
     "function-paren-newline": ["error", "consistent"],
     "comma-dangle": ["error", "only-multiline"],
     "object-curly-newline": ["error", { "consistent": true }],
