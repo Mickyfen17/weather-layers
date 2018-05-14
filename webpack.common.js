@@ -16,10 +16,18 @@ module.exports = {
         exclude: /node_modules/,
         use: { loader: 'babel-loader' },
       },
+      {
+        test: /\.(png|svg|jpg|gif)$/,
+        use: ['file-loader'],
+      },
     ],
   },
   resolve: {
     extensions: ['.js', '.jsx', '.json', '.scss', '.css'],
+    alias: {
+      images: path.resolve(__dirname, 'src/images'),
+      styles: path.resolve(__dirname, 'src/styles'),
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({

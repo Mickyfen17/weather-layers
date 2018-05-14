@@ -8,6 +8,13 @@
       "jsx": true
     }
   },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "paths": ["src"]
+      }
+    }
+  },
   "rules": {
     "no-underscore-dangle": 0,
     "spaced-comment": 0,
